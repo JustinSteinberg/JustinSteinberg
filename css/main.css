@@ -1,0 +1,514 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.grid-container{
+	display: grid;
+	gap: 1px;
+	grid-template-areas: 
+	"header"
+	"nav"
+	"content"
+	"sidebar"
+	"footer";
+
+}
+
+.main-header{
+	background-color: green;
+	grid-area: header;
+	height: 15vh;
+}
+
+.main-nav{
+	background-color: blue;
+	grid-area: nav;
+	height: 10vh;
+}
+
+.content{
+	grid-area: content;
+	background-color: floralwhite;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(15, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	text-align: center;
+}
+
+.blocker1{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 7;
+	grid-column-end: 7;
+	overflow: hidden;
+	background-color: floralwhite;
+	z-index: 2;
+}
+
+.blocker2{
+	grid-row-start: 5;
+	grid-row-end: 5;
+	grid-column-start: 7;
+	grid-column-end: 7;
+	overflow: hidden;
+	background-color: floralwhite;
+	z-index: 2;
+}
+
+
+.blocker3{
+	grid-row-start: 1;
+	grid-row-end: 1;
+	grid-column-start: 8;
+	grid-column-end: 8;
+	overflow: hidden;
+	background-color: floralwhite;
+	z-index: 2;
+}
+
+
+.blocker4{
+	grid-row-start: 5;
+	grid-row-end: 5;
+	grid-column-start: 8;
+	grid-column-end: 8;
+	overflow: hidden;
+	background-color: floralwhite;
+	z-index: 2;
+}
+
+.letter{
+	font-size: 56px;
+	font-style: italic;
+	border: black 1px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.J{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 3;
+}
+
+.U{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 4;
+	grid-column-end: 4;
+}
+
+.S{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 5;
+	grid-column-end: 5;
+}
+
+.T{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 6;
+	grid-column-end: 6;
+}
+
+.I{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 7;
+	grid-column-end: 7;
+}
+
+.N{
+	grid-row-start: 2;
+	grid-row-end: 2;
+	grid-column-start: 8;
+	grid-column-end: 8;
+}
+
+.S2{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 4;
+	grid-column-end: 4;
+}
+
+.T2{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 5;
+	grid-column-end: 5;
+}
+
+.E2{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 6;
+	grid-column-end: 6;
+}
+
+.gradColor{
+	display: grid;
+	/*background: linear-gradient(-45deg, #ee7752, #e73c37, #23a6d5, #23d5ab);
+	-webkit-background-clip: text;*/
+	grid-row-start: 1;
+	grid-row-end: 5;
+	grid-column-start: 7;
+	grid-column-end: 9;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	text-align: center;
+}
+
+
+.I2{
+	animation: move-verticle 5s linear infinite reverse,
+	rainbow-animation 5s linear infinite;
+	/*animation: increaseIn 3s linear;*/
+	animation-fill-mode: forwards;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	color: floralwhite;
+}
+
+.I3{
+	animation: move-verticle 5s linear 1.25s infinite reverse,
+	rainbow-animation 5s linear 1.25s infinite;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	color: floralwhite;
+}
+.I4{
+	animation: move-verticle 5s linear 2.5s infinite reverse,	
+	rainbow-animation 5s linear 2.5s infinite;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	color: floralwhite;
+}
+
+.I5{
+	animation: move-verticle 5s linear 3.75s infinite reverse,
+	rainbow-animation 5s linear 3.75s infinite;
+
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	color: floralwhite;
+
+}
+
+.I6{
+	animation: movestart 0s reverse, move-verticle 5s linear 5.0s infinite reverse, rainbow-animation 5s linear 5.0s infinite;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 1;
+	color: floralwhite;
+}
+
+
+.N2{
+	animation: movestart 0s reverse, move-verticle 5s linear infinite reverse,
+	rainbow-animation 5s linear infinite;
+	/*animation: increaseIn2 3s linear;
+	animation-fill-mode: forwards;*/
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+		color: floralwhite;
+
+}
+
+
+.N3{
+	animation: movestart 0s reverse, move-verticle 5s linear 1.25s infinite reverse,
+	rainbow-animation 5s linear 1.25s infinite;
+
+	/*animation: increaseIn2 3s linear;
+	animation-fill-mode: forwards;*/
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	color: floralwhite;
+
+}
+
+.N4{
+	animation: movestart 0s reverse, move-verticle 5s linear 2.5s infinite reverse,
+	rainbow-animation 5s linear 2.5s infinite;
+
+	/*animation: increaseIn2 3s linear;
+	animation-fill-mode: forwards;*/
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	color: floralwhite;
+
+}
+
+.N5{
+	animation: movestart 0s reverse, move-verticle 5s linear 3.75s infinite reverse, rainbow-animation 5s linear 3.75s infinite;
+	-webkit-animation: move-verticle 5s linear 3.75s infinite reverse, rainbow-animation 5s linear 3.75s infinite;
+	/*animation: increaseIn2 3s linear;
+	animation-fill-mode: forwards;*/
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	color: floralwhite;
+
+}
+
+.N6{
+	animation: movestart 0s reverse, move-verticle 5s linear 5.0s infinite reverse, rainbow-animation 5s linear 5.0s infinite;
+	display: none;
+	/*animation: increaseIn2 3s linear;
+	animation-fill-mode: forwards;*/
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 2;
+	color: floralwhite;
+
+}
+
+
+.B2{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 9;
+	grid-column-end: 9;
+}
+
+.E3{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 10;
+	grid-column-end: 10;
+}
+
+.R2{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 11;
+	grid-column-end: 11;
+}
+
+.G2{
+	grid-row-start: 3;
+	grid-row-end: 3;
+	grid-column-start: 12;
+	grid-column-end: 12;
+}
+
+
+.I7{
+
+
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 7;
+	grid-column-end: 7;
+
+}
+
+
+.N7{
+
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 8;
+	grid-column-end: 8;
+
+}
+
+
+.S7{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 9;
+	grid-column-end: 9;
+}
+
+
+.P7{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 10;
+	grid-column-end: 10;
+
+}
+
+.I8{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 11;
+	grid-column-end: 11;
+
+}
+
+
+.R7{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 12;
+	grid-column-end: 12;
+
+}
+
+.E7{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 13;
+	grid-column-end: 13;
+
+}
+
+.D7{
+	grid-row-start: 4;
+	grid-row-end: 4;
+	grid-column-start: 14;
+	grid-column-end: 14;
+
+}
+
+.side{
+	grid-area: sidebar;
+	background-color: crimson;
+}
+
+.main-footer{
+	grid-area: footer;
+	background-color: coral;
+}
+
+li{
+	display: inline;
+}
+
+li a{
+	color: black;
+}
+
+@keyframes move-verticle{
+	from{
+		transform: translateY(-250%);
+		z-index: 1;
+	}
+	to{
+		transform: translateY(75%);	
+		z-index: 1;
+	}
+}
+/*
+@keyframes move-start{
+	to{
+		transform: translateY(100%);	
+	}
+}
+*/
+
+@keyframes rainbow-animation{
+	0%, 100%{
+		color: #f6b630;
+	}
+	10%{
+		color: #d68332;
+	}
+	20%{
+		color: #f5b196;
+	}
+	30%{
+		color: #a3b0d4;
+	}
+	40%{
+		color: #ddcaca;
+	}
+	50%{
+		color: #a38e92;
+	}
+	60%{
+		color: #917992;
+	}
+	70%{
+		color: #617199;
+	}
+	80%{
+		color: #545a75;
+	}
+	90%{
+		color: #30344c
+	}
+}
+
+@keyframes increaseIn{
+	from{
+		font-size: 42px;
+		/*grid-row-start: 3;
+		grid-row-end: 3;
+		grid-column-start: 7;
+		grid-column-end: 7;*/
+	}
+	to{
+		font-size: 402px;
+		/*grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 7;
+		grid-column-end: 7;*/
+	}
+}
+
+@keyframes increaseIn2{
+	from{
+		font-size: 42px;
+		/*grid-row-start: 3;
+		grid-row-end: 3;
+		grid-column-start: 8;
+		grid-column-end: 8;*/
+	}
+		
+	to{
+		font-size: 402px;
+		/*grid-row-start: 2;
+		grid-row-end: 3;
+		grid-column-start: 8;
+		grid-column-end: 8;*/
+	}
+}
+
+@media screen and (min-width: 576px){
+
+	.grid-container {
+		display: grid;
+		gap: 0px;
+		grid-template-columns: 11fr 1fr;
+		grid-template-areas:
+		"content content " 
+		"header header"
+		"nav nav"
+		"sidebar sidebar"
+		"footer footer";
+		transition: 0.3s;
+	}
+
+	.grid-container:has(.side:hover){
+		grid-template-columns: 11fr 3fr;
+	}
+
+}

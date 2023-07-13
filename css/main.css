@@ -476,11 +476,11 @@ li a{
 @keyframes move-verticle{
 	from{
 		transform: translateY(-175%);
-		z-index: 10;
+		z-index: 13;
 	}
 	to{
 		transform: translateY(175%);	
-		z-index: 10;
+		z-index: 13;
 	}
 }
 /*
@@ -621,22 +621,114 @@ li a{
 	    transform: translate(-47px, 20px);
 	}
 
+	.oval {
+	      z-index: 15;
+	    grid-row-start: 1;
+	    grid-row-end: 1;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    width: 384px;
+	    height: 158px;
+	    background: gray;
+	    border-radius: 50%;
+	    transform: translateY(26px);
+        border: 3px solid black;
+	}
+
+	.oval-glare {
+   		z-index: 16;
+	    grid-row-start: 1;
+	    grid-row-end: 1;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    width: 39px;
+	    height: 75px;
+	    background: rgba(255,255,255,0.3);
+	    border-radius: 50%;
+	    transform: translateY(13px) translateX(123px) rotate(44deg);
+	}
+
+	.oval-body {
+	    z-index: 14;
+	    grid-row-start: 1;
+	    grid-row-end: 1;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    width: 339px;
+		height: 151px;
+		background: gray;
+		border-radius: 50%;
+		transform: translateY(53px) translateX(23px);
+		border: 3px solid black;
+		}
+
+	.oval-window {
+	    z-index: 15;
+	    grid-row-start: 1;
+	    grid-row-end: 1;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    width: 216px;
+    	height: 74px;
+	    background: green;
+	    border-radius: 50%;
+	    border: 3px black solid;
+	    transform: translateY(71px) translateX(82px);
+	    box-shadow: 0px 0px 30px 10px green;
+	}
+
+
+	.oval-beam{
+	   z-index: 12;
+	    grid-row-start: 4;
+	    grid-row-end: 5;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    width: 384px;
+	    height: 146px;
+	    background: blue;
+	    border-radius: 50%;
+	    border: 3px black solid;
+	    transform: translateY(71px) translateX(2px);
+	    box-shadow: 0px 0px 30px 10px blue;
+	}
+
+
+	.semi-circle {
+        z-index: 16;
+	    grid-row-start: 1;
+	    grid-row-end: 1;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    height: 107px;
+    	width: 216px;
+	    border-radius: 150px 150px 0 0;
+	    background-color: green;
+	    transform: translateX(82px);
+	    box-shadow: 0px 0px px 10px greenyellow;
+	    border-top: 3px solid black;
+	    border-left: 3px solid black;
+	    border-right: 3px solid black;
+	}
+
+
 	.triangle1 {
 	    grid-row-start: 2;
 	    grid-row-end: 5;
-	    grid-column-start: 5;
-	    grid-column-end: 11;
-	    border-right: 13vw solid transparent;
-	    border-bottom: 60vh solid blue;
+	    grid-column-start: 6;
+	    grid-column-end: 10;
+	    border-right: 97px solid transparent;
+   		border-bottom: 444px solid blue;
 	}
+
 	.triangle2 {
-	    grid-row-start: 2;
+        grid-row-start: 2;
 	    grid-row-end: 5;
-	    grid-column-start: 4;
+	    grid-column-start: 5;
 	    grid-column-end: 7;
-	    border-right: 25vh solid transparent;
-	    border-top: 31vw solid floralwhite;
-	}
+	    border-right: 97px solid transparent;
+   	    border-top: 444px solid floralwhite;
+		}
 
 	.triangle3 {
 	    z-index: 15;

@@ -614,7 +614,7 @@ li a{
 	    height: 80px;
 	    width: 80px; 
 	    background-color: #fff;
-	    box-shadow: 0px 0px 30px 15px #0ff;
+	    box-shadow: 0px 0px 30px 10px lightyellow;
 	    border-radius: 50%;
 	    display: inline-block;
 	    z-index: 20;
@@ -624,17 +624,17 @@ li a{
 	.triangle1 {
 	    grid-row-start: 2;
 	    grid-row-end: 5;
-	    grid-column-start: 3;
-	    grid-column-end: 12;
-	    border-right: 21vw solid transparent;
+	    grid-column-start: 5;
+	    grid-column-end: 11;
+	    border-right: 13vw solid transparent;
 	    border-bottom: 60vh solid blue;
 	}
 	.triangle2 {
 	    grid-row-start: 2;
 	    grid-row-end: 5;
-	    grid-column-start: 3;
+	    grid-column-start: 4;
 	    grid-column-end: 7;
-	    border-right: 39vh solid transparent;
+	    border-right: 25vh solid transparent;
 	    border-top: 31vw solid floralwhite;
 	}
 
@@ -646,7 +646,7 @@ li a{
 	    grid-column-end: 10;
 	    border-left: 30px solid transparent;
 	    border-right: 30px solid transparent;
-	    border-bottom: 120px solid black;
+	    border-bottom: 130px solid black;
 	    transform: translateY(10px);
 	    /* border-radius: 0px; */
 	}

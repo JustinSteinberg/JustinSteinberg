@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.grid-container{
+	display: grid;
+	gap: 1px;
+	grid-template-areas: 
+	"content"
+	"sidebar"
+	"footer";
+
+}
+
+.content{
+	grid-area: content;
+	background-color: floralwhite;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	text-align: center;
+}
+
+.quad{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.work{
+	grid-row: 1 / 4;
+	grid-column: 1 / 6;
+}
+
+.connect{
+	grid-row: 1 / 6;
+	grid-column: 6 / 10;
+}
+
+.skills{
+	grid-row: 6 / 10;
+	grid-column: 4 / 10;
+}
+
+.about{
+	grid-row: 4 / 10;
+	grid-column: 1 / 4;
+}
+
+.logo{
+	grid-row: 4 / 6;
+	grid-column: 4 / 6;
+}
+
+@media screen and (min-width: 576px){
+
+.content{
+	grid-area: content;
+	background-color: floralwhite;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(9, 1fr);
+	text-align: center;
+}
+
+
+
+}

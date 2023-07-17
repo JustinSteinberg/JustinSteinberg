@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex-container-1{
+	display: flex;
+}
+
+.flex-container-1{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.flex-container-2 {
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+	top: -40vh;
+}
+
+.work{
+	flex: 0.6 1 60%;
+	align-self: flex-start;
+	height: 40vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+}
+
+.connect{
+	flex: 0.4 1 40%;
+	height: 60vh;
+	align-self: stretch;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+
+}
+
+.connect:hover{
+	background-color: green;
+}
+
+
+.about{
+	flex: 0.4 1 0;
+	height: 60vh;
+	position: relative;
+	top: -20vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+
+}
+
+.logo{
+	flex: 0.2 1 0;
+	height: 20vh;
+	align-self: flex-start;
+	position: relative;
+	top: -20vh;
+	text-align: center;
+	transition: 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.community{
+	flex: 0.6 1 0%;
+	align-self: flex-start;
+	height: 40vh;
+	position: relative;
+	top: -20vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+
+}
+
+.flex-container-1 > * {
+	border: 3px solid black;
+}
+
+
+.flex-container-2 > * {
+	border: 3px solid black;
+}
+
+
+.flex-container-2 > * {
+	border: 3px solid black;
+}

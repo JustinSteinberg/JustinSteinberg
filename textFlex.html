@@ -5,29 +5,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Justin Steinberg's Website</title>
 
-	<link rel="stylesheet" href="css/quads.css">
+	<link rel="stylesheet" href="css/flex.css">
 
 	<script
  	 	src="https://code.jquery.com/jquery-3.7.0.min.js"
   		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
   		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="scripts/mainScript.js"></script>
+	<script type="text/javascript" src="scripts/flexTest.js"></script>
 
 </head>
 <body>
-<div class="grid-container">
-	<main class="content">
-		
-		<div class="work quad"><h1>Work</h1></div>
-		<div class="connect quad"><h1>Connect</h1></div>
-		<div class="about quad"><h1>About</h1></div>
-		<div class="skills quad"><h1>Skills</h1></div>
-		<div class="logo quad"><h1>JSI</h1></div>
-
-	</main>
-	<aside class="side">Sidebar</aside>
-	<footer class="main-footer">Footer</footer>
+<div class="flex-container">
+<div class="flex-container-1"> 
+	<div class="work"><h1>Work</h1></div>
+	<div class="connect"><h1>Connect</h1></div>
+	<div class="about"><h1>About<h1></div>
+	<div class="logo"><h1>Logo</h1></div>
 </div>
+<div class="flex-container-2">
+	<div class="community"><h1>Community</h1></div>
+</div>
+<div>
+<!--<div class="flex-container-2"> 
+	<div class="about">About</div>
+	<div class="logo">Logo</div>
+	<div class="community">Community</div>
+
+</div>-->
 </body>
 
 	<!--<script src="https://unpkg.com/animate-css-grid@latest"></script>

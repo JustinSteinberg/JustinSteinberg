@@ -19,9 +19,21 @@
 	background-color: floralwhite;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: repeat(9, 1fr);
+	grid-template-areas: 'work work work work work work connect connect connect connect'
+						 'work work work work work work connect connect connect connect'
+						 'work work work work work work connect connect connect connect'
+						 'work work work work work work connect connect connect connect'
+						 'about about about about logo logo connect connect connect connect'
+ 						 'about about about about logo logo connect connect connect connect'
+ 						 'about about about about skills skills skills skills skills skills'
+ 						 'about about about about skills skills skills skills skills skills'
+ 						 'about about about about skills skills skills skills skills skills'
+ 						 'about about about about skills skills skills skills skills skills';
+
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
 	text-align: center;
+	transition: 0.2s;
 }
 
 .quad{
@@ -30,31 +42,27 @@
 	align-items: center;
 	text-align: center;
 	border: 2px solid black;
+	transition: 0.2s;
 }
 
 .work{
-	grid-row: 1 / 4;
-	grid-column: 1 / 6;
+	grid-area: work;
 }
 
 .connect{
-	grid-row: 1 / 6;
-	grid-column: 6 / 10;
+	grid-area: connect;
 }
 
 .skills{
-	grid-row: 6 / 10;
-	grid-column: 4 / 10;
+	grid-area: skills;
 }
 
 .about{
-	grid-row: 4 / 10;
-	grid-column: 1 / 4;
+	grid-area: about;
 }
 
 .logo{
-	grid-row: 4 / 6;
-	grid-column: 4 / 6;
+	grid-area: logo;
 }
 
 @media screen and (min-width: 576px){
@@ -64,11 +72,163 @@
 	background-color: floralwhite;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: repeat(9, 1fr);
-	grid-template-rows: repeat(9, 1fr);
+	/*grid-template-areas: 'work work work work work work connect connect connect connect'
+						 'work work work work work work connect connect connect connect'
+						 'work work work work work work connect connect connect connect'
+						 'work work work work work work connect connect connect connect'
+						 'about about about about logo logo connect connect connect connect'
+ 						 'about about about about logo logo connect connect connect connect'
+ 						 'about about about about skills skills skills skills skills skills'
+ 						 'about about about about skills skills skills skills skills skills'
+ 						 'about about about about skills skills skills skills skills skills'
+ 						 'about about about about skills skills skills skills skills skills';*/
+
+	/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
 	text-align: center;
+	transition: 1s ease-in-out;
+	-webkit-transition: 1s;
 }
 
+/*
+@keyframes animate-grid{
 
+	0%{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	25%{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr 2fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	100%{
+
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr 2fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+	}
+
+}
+
+.connect:hover{
+	animation: animate-grid 1s;
+}
+*/
+
+/*
+.content:has(.connect:hover){
+	grid-template-areas: 'work work work work connect connect connect connect connect connect connect'
+						 'work work work work connect connect connect connect connect connect connect'
+						 'work work work work connect connect connect connect connect connect connect'
+						 'work work work work connect connect connect connect connect connect connect'
+						 'work work work work connect connect connect connect connect connect connect'
+ 						 'about about logo logo connect connect connect connect connect connect connect'
+ 						 'about about logo logo connect connect connect connect connect connect connect '
+ 						 'about about skills skills skills skills skills skills skills skills skills'
+ 						 'about about skills skills skills skills skills skills skills skills skills'
+ 						 'about about skills skills skills skills skills skills skills skills skills';
+	transition: 1s;
+}
+
+.content:has(.skills:hover){
+	grid-template-areas: 'work work work work work connect connect connect connect connect'
+						 'work work work work work connect connect connect connect connect'
+						 'about about about logo logo connect connect connect connect connect'
+						 'about about about logo logo connect connect connect connect connect'
+						 'about about about skills skills skills skills skills skills skills'
+ 						 'about about about skills skills skills skills skills skills skills '
+ 						 'about about about skills skills skills skills skills skills skills '
+ 						 'about about about skills skills skills skills skills skills skills '
+ 						 'about about about skills skills skills skills skills skills skills '
+ 						 'about about about skills skills skills skills skills skills skills ';
+
+	transition: 1s;
+}
+
+.content:has(.work:hover){
+	grid-template-areas: 'work work work work work work work connect connect connect'
+						 'work work work work work work work connect connect connect'
+						 'work work work work work work work connect connect connect'
+						 'work work work work work work work connect connect connect'
+						 'work work work work work work work connect connect connect'
+ 						 'work work work work work work work connect connect connect'
+ 						 'about about about about about logo logo connect connect connect '
+ 						 'about about about about about logo logo connect connect connect '
+ 						 'about about about about about skills skills skills skills skills'
+ 						 'about about about about about skills skills skills skills skills';
+
+}
+
+.content:has(.about:hover){
+	grid-template-areas: 'work work work work work work work work work connect connect'
+						 'work work work work work work work work work connect connect'
+						 'work work work work work work work work work connect connect'
+						 'about about about about about about about  logo logo connect connect'
+						 'about about about about about about about logo logo connect connect'
+ 						 'about about about about about about about skills skills skills skills'
+ 						 'about about about about about about about skills skills skills skills '
+ 						 'about about about about about about about skills skills skills skills'
+ 						 'about about about about about about about skills skills skills skills'
+ 						 'about about about about about about about skills skills skills skills';
+}
+
+.content:has(.logo:hover){
+	grid-template-areas: 'work work work connect connect connect connect connect connect connect'
+						 'work work work connect connect connect connect connect connect  connect'
+						 'work work work connect connect connect connect connect connect connect '
+						 'work work work  logo logo logo logo skills skills skills'
+						 'work work work  logo logo logo logo skills skills skills '
+ 						 'work work work  logo logo logo logo skills skills skills '
+ 						 'work work work  logo logo logo logo skills skills skills   '
+ 						 'about about about about about about about skills skills skills '
+ 						 'about about about about about about about skills skills skills '
+ 						 'about about about about about about about skills skills skills ';
+	transition: 1s;
+}
+
+*/
+
+.work{
+	grid-row: 1 / 5;
+	grid-column: 1 / 7;
+	transition: 0.2s;
+
+}
+
+.connect{
+	grid-row: 1 / 7;
+	grid-column: 7 / 11;
+	grid-area: connect;
+	transition: 0.2s;
+
+}
+
+.skills{
+	grid-row: 7 / 11;
+	grid-column: 5 / 11;
+	grid-area: skills;
+	transition: 0.2s;
+
+}
+
+.about{
+	grid-row: 5 / 11;
+	grid-column: 1 / 5;
+	grid-area: about;
+	transition: 0.2s;
+
+}
+
+.logo{
+	grid-row: 5 / 7;
+	grid-column: 5 / 7;
+	grid-area: logo;
+    transition: 0.2s;
+
+}
 
 }

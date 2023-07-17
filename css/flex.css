@@ -32,6 +32,11 @@
 	transition: 0.2s;
 }
 
+
+.work:hover{
+	background-color: green;
+}
+
 .connect{
 	flex: 0.4 1 40%;
 	height: 60vh;
@@ -62,6 +67,11 @@
 
 }
 
+
+.about:hover{
+	background-color: green;
+}
+
 .logo{
 	flex: 0.2 1 0;
 	height: 20vh;
@@ -76,6 +86,11 @@
 
 }
 
+.logo:hover{
+	background-color: green;
+}
+
+
 .community{
 	flex: 0.6 1 0%;
 	align-self: flex-start;
@@ -89,6 +104,11 @@
 	transition: 0.2s;
 
 }
+
+.community:hover{
+	background-color: green;
+}
+
 
 .flex-container-1 > * {
 	border: 3px solid black;

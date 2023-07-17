@@ -112,4 +112,39 @@ $(document).ready(function(){
 		$(".community").css("flex", "0.60 1 0");
 
 	});
+
+	//* LOGO
+	$(".logo").hover(function(){
+		var flexHover = "0.4 1 0%";
+		$(this).css("flex", flexHover);
+		$(this).css("height", "40vh");		
+		$(this).css("top", "-40vh");
+		$(".work").css("flex", "0.70 1 70%");
+		$(".work").css("height", "30vh");
+		$(".connect").css("flex", "0.30 1 30%");
+		$(".connect").css("height", "70vh");
+		$(".about").css("flex", "0.30 1 0")
+		$(".about").css("height", "70vh")
+		$(".about").css("top", "-40vh")
+		$(".community").css("height", "30vh");
+		$(".community").css("top", "-30vh");
+		$(".community").css("flex", "0.70 1 0");
+
+	}, function(){
+		var flexUnhover = "0.2 1 0%";
+		$(this).css("flex", flexUnhover);
+		$(this).css("height", "20vh");
+		$(this).css("top", "-20vh");
+		$(".work").css("flex", "0.60 1 60%");
+		$(".work").css("height", "40vh");
+		$(".connect").css("flex", "0.40 1 40%");
+		$(".connect").css("height", "60vh");
+		$(".community").css("height", "40vh");
+		$(".community").css("top", "-20vh");
+		$(".community").css("flex", "0.60 1 0");
+		$(".about").css("flex", "0.40 1 0");
+		$(".about").css("height", "60vh");
+		$(".about").css("top", "-20vh");
+
+	});
 });

@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+body{
+	background-color: black;
+}
+
 .flex-container-1{
 	display: flex;
 	flex-wrap: wrap;
@@ -17,6 +21,10 @@
 	position: relative;
 	top: -20vh;
 	transition: 0.3 linear;
+}
+
+.work, .about, .connect, .community, .logo{
+	background-color: white;
 }
 
 .work{

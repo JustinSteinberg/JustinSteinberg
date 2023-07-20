@@ -6,13 +6,75 @@
 
 body{
 	background-color: black;
+	overflow: hidden;
+}
+
+.marquee{
+	height: 50px;
+	width: 100%;
+	z-index: 90;
+	border: 3px solid black;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	color: black;
+	overflow: hidden;
+	background-color: white;
+	gap: 100px;
+}
+
+.marquee-bottom{
+	height: 50px;
+	width: 100%;
+	z-index: 90;
+	border: 3px solid black;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	color: black;
+	overflow: hidden;
+	background-color: white;
+}
+
+.marquee-group span{
+
+	color: black;
+	white-space: nowrap;
+	font-size: 20px;
+
+}
+
+
+.marquee-group{
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: space-between;
+	gap: 100px;
+	min-width: 100%;
+	animation: scroll-left 10s linear infinite;
+	font-family: 'Roboto', sans-serif;
+
+
+}
+
+@keyframes scroll-left{
+	0%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(calc(-100% - 100px));
+	}
 }
 
 .flex-container-1{
 	display: flex;
 	flex-wrap: wrap;
-	transition: 0.3s linear;
+	transition: 0.3s ease;
 	justify-content: center;
+	position: relative;
 }
 
 
@@ -20,15 +82,20 @@ body{
 	display: flex;
 	position: relative;
 	top: -20vh;
-	transition: 0.3 linear;
+	transition: 0.3 ease;
 }
 
 .work, .about, .connect, .community, .logo{
-	background-color: white;
+	background-color: white; 
+	background-image: linear-gradient(#F8E9A1, #F8E9A1);
+  	background-repeat: no-repeat;
+ 	transition: background-size .1s, color .1s;
+ 	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
 }
 
 .work{
-		border: 3px solid black;
+	border: 3px solid black;
 
 	flex: 0.6 1 60%;
 	align-self: flex-start;
@@ -37,15 +104,23 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: 0.3s linear;
+	transition: 0.3s ease;
    /* border-right-width: 0;
     border-bottom-width: 0;*/
     position: relative;
+    background-position: 0% 0%;
+    background-size: 0% 0%;
+  
 }
 
 
 .work:hover{
-	background-color: green;
+	background-size: 100% 100%;
+	cursor: pointer;
+color: #374785;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 5px;
 }
 
 .connect{
@@ -58,14 +133,20 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: 0.3s linear;
+	transition: 0.3s ease;
 	position: relative;
+	background-position: 100% 0%;
+    background-size: 0% 0%;
 
 }
 
 .connect:hover{
-	background-color: green;
-}
+	background-size: 100% 100%;
+	cursor: pointer;
+color: #374785;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 5px;}
 
 
 .about{
@@ -78,15 +159,23 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: 0.3s linear;
+	transition: 0.3s ease;
 	order: 1;
 	position: relative;
+	background-position: 0% 100%;
+    background-size: 0% 0%;
+
 
 }
 
 
 .about:hover{
-	background-color: green;
+	background-size: 100% 100%;
+	cursor: pointer;
+color: #374785;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 5px;
 }
 
 .logo{
@@ -101,7 +190,7 @@ body{
 	align-items: center;
 	justify-self: center;
 	justify-content: center;
-	transition: 0.3s linear;
+	transition: 0.3s ease;
    /* border-left-width: 0;
     border-right-width: 0;*/
 
@@ -109,7 +198,11 @@ body{
 
 .logo:hover{
 	background-color: green;
-
+	cursor: pointer;
+	color: #374785;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 5px;
 }
 
 
@@ -125,9 +218,11 @@ body{
 	align-items: center;
 	align-self: flex-end;
 	justify-content: center;
-	transition: 0.3s linear;
+	transition: 0.3s ease;
 	order: 2;
 		position: relative;
+	background-position: 100% 100%;
+    background-size: 0% 0%;
 
     /*border-left-width: 0;
     border-top-width: 0;*/
@@ -149,14 +244,11 @@ body{
 	transition: 0.3s ease-in-out;
 }
 
-.hidden-box{
-	display: none;
-}
-
-.hidden-logo:hover{
-	background-color: green;
-}
-
 .community:hover{
-	background-color: green;
+    background-size: 100% 100%;
+	cursor: pointer;
+color: #374785;
+	font-size: 42px;
+	font-weight: bold;
+	letter-spacing: 5px;
 }

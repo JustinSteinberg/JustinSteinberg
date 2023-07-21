@@ -1,0 +1,88 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 3fr 3fr;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	font-style: italic;
+	grid-column: 1 / 4;
+}
+
+ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+li{
+	border: 3px solid black;
+	flex: .2 0 20%;
+	width: 20%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s ease;
+}
+
+nav a{
+	text-transform: uppercase;
+}
+
+a:hover{
+	background-color: #F0898C;
+}
+
+header{
+	padding: 20px;
+	font-size: 38px;
+	grid-column: 1 / 3;
+}
+
+.skills{
+	padding: 30px;
+	font-size: 32px;
+	grid-column: 1 / 2;
+}
+
+.job{
+	grid-row: 3;
+	padding: 20px;
+}
+
+.job h2{
+	font-size: 72px;
+}
+
+.job h3{
+	font-size: 28px;
+}
+
+.job p{
+	padding-top: 20px;
+	line-height: 25px;
+}

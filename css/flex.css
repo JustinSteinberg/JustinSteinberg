@@ -9,6 +9,21 @@ body{
 	overflow: hidden;
 }
 
+a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s ease;
+}
+
+a:hover{
+	color: #4BC0EF;
+}
+
 .marquee{
 	height: 50px;
 	width: 100%;
@@ -82,12 +97,12 @@ body{
 	display: flex;
 	position: relative;
 	top: -20vh;
-	transition: 0.3 ease;
+	transition: 0.3s ease;
 }
 
 .work, .about, .connect, .community, .logo{
 	background-color: white; 
-	background-image: linear-gradient(#F8E9A1, #F8E9A1);
+	background-image: linear-gradient(#F0898C, #F0898C);
   	background-repeat: no-repeat;
  	transition: background-size .1s, color .1s;
  	text-transform: uppercase;
@@ -117,7 +132,7 @@ body{
 .work:hover{
 	background-size: 100% 100%;
 	cursor: pointer;
-color: #374785;
+	color: #4BC0EF;
 	font-size: 42px;
 	font-weight: bold;
 	letter-spacing: 5px;
@@ -127,7 +142,7 @@ color: #374785;
 		border: 3px solid black;
 
 	flex: 0.40 1 40%;
-	height: 60vh;å
+	height: 60vh;
 	text-align: center;
 	align-self: flex-end;
 	display: flex;
@@ -143,10 +158,11 @@ color: #374785;
 .connect:hover{
 	background-size: 100% 100%;
 	cursor: pointer;
-color: #374785;
+	color: #4BC0EF;
 	font-size: 42px;
 	font-weight: bold;
-	letter-spacing: 5px;}
+	letter-spacing: 5px;
+}
 
 
 .about{
@@ -172,14 +188,14 @@ color: #374785;
 .about:hover{
 	background-size: 100% 100%;
 	cursor: pointer;
-color: #374785;
+	color: #4BC0EF;
 	font-size: 42px;
 	font-weight: bold;
 	letter-spacing: 5px;
 }
 
 .logo{
-		border: 3px solid black;
+	border: 3px solid black;
 
 	flex: 0 1 20%;
 	height: 20vh;
@@ -199,7 +215,7 @@ color: #374785;
 .logo:hover{
 	background-color: green;
 	cursor: pointer;
-	color: #374785;
+	color: #4BC0EF;
 	font-size: 42px;
 	font-weight: bold;
 	letter-spacing: 5px;
@@ -247,7 +263,7 @@ color: #374785;
 .community:hover{
     background-size: 100% 100%;
 	cursor: pointer;
-color: #374785;
+	color: #4BC0EF;
 	font-size: 42px;
 	font-weight: bold;
 	letter-spacing: 5px;

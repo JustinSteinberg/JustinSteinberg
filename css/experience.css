@@ -69,6 +69,49 @@ header{
 	grid-column: 1 / 2;
 }
 
+.skillsDescription{
+	/*grid-column: 1 / 2;
+	grid-row: 3 / 4;*/
+	font-size: 20px;
+	padding-top: 20px;
+
+}
+
+.skill-1{
+	grid-column: 2 / 2;
+	font-size: 20px;
+	padding: 30px;
+}
+
+.skill-2{
+	grid-column: 3 / 3;
+	font-size: 20px;
+	padding: 30px;
+}
+
+.skill-3{
+	grid-column: 2 / 2;
+	grid-row: 3  / 3;
+	font-size: 20px;
+	padding: 30px;
+}
+
+.skill-4{
+	grid-column: 3 / 3;
+	grid-row: 3  / 3;
+	font-size: 20px;
+	padding: 30px;
+}
+
+.skills h2{
+	font-size: 30px;
+}
+
+.skills p{
+	padding-top: 20px;
+
+}
+
 .job{
 	grid-row: 3;
 	padding: 20px;

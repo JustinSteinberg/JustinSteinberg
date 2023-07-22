@@ -127,6 +127,9 @@ header{
 	align-items: center;
 	background-color: #F0898C;
 	height: 100%;
+	border: 3px solid black;
+	border-top: none;
+	border-right: none;
 }
 
 .social-media{
@@ -135,10 +138,13 @@ header{
 	grid-row: 2  / 3;
 	justify-content: center;
 	align-items: center;
-	background-color: #F0898C;
+	background-color: white;
 	height: 100%;
 	grid-template-rows: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
+	border: 3px solid black;
+	border-top: none;
+
 }
 
 .fa-4x{

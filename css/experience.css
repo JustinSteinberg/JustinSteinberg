@@ -188,7 +188,7 @@ h2 span {
 	align-content: center;
 	justify-self: flex-end;
 	text-align: center;
-	padding-right: 50px;
+	margin-right: 50px;
 }
 
 .sym2{
@@ -196,7 +196,7 @@ h2 span {
 	align-content: center;
 	justify-self: flex-start;
 	text-align: center;
-	padding-left: 50px;
+	margin-left: 50px;
 }
 
 .sym3{
@@ -205,6 +205,66 @@ h2 span {
 
 .sym4{
 	margin-bottom: 150px;
+}
+
+.fa-facebook{
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.fa-facebook:hover{
+	box-shadow: 0px 0px 20px 0px #4267B2;
+	background-color: #4267B2;
+}
+
+.fa-github{
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+.fa-github:hover{
+	box-shadow: 0px 0px 20px 0px  #6cc644;
+	background-color:  #6cc644;
+}
+
+.fa-linkedin{
+	border-radius: 20%;
+	transition: 0.3s;
+	width: 99px;
+	height: 99px;
+}
+
+.fa-linkedin:hover{
+	box-shadow: 0px 0px 20px 0px  #0077B5;
+	background-color:  #0077B5;
+}
+
+.fa-linkedin:before{
+	position: relative;
+	top: -6px;
+	transition: 0.3s;
+}
+
+.fa-instagram{
+	transition: 0.3s;
+}
+
+.fa-background{
+	border-radius: 36%;
+	height: 100px;
+	width: 100px;
+	transition: 0.3s;
+}
+
+.fa-instagram:hover{
+	box-shadow: 0px 0px 20px 0px #fccc63;
+	background-color: #fdf497;
+}
+
+.fa-instagram:before{
+	position: relative;
+	top: -5px;
+	transition: 0.3s;
 }
 
 form{

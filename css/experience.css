@@ -15,7 +15,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 7vh 90vh;
+	grid-template-rows: 7vh 93vh;
 }
 
 nav{
@@ -124,9 +124,50 @@ header{
 	grid-column: 1 / 2;
 	grid-row: 2  / 3;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+	background-color: #F0898C;
+	height: 100%;
 }
 
+.social-media{
+	display: grid;
+	grid-column: 2 / 3;
+	grid-row: 2  / 3;
+	justify-content: center;
+	align-items: center;
+	background-color: #F0898C;
+	height: 100%;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.fa-4x{
+	font-size: 6em;
+}
+
+.sym1{
+	display: flex;
+	align-content: center;
+	justify-self: flex-end;
+	text-align: center;
+	padding-right: 50px;
+}
+
+.sym2{
+	display: flex;
+	align-content: center;
+	justify-self: flex-start;
+	text-align: center;
+	padding-left: 50px;
+}
+
+.sym3{
+	margin-top: 150px;
+}
+
+.sym4{
+	margin-bottom: 150px;
+}
 
 form{
 	padding: 80px 30px 30px 30px;
@@ -148,10 +189,20 @@ textarea{
   width: 100%;
   height: 150px;
   padding: 12px 20px;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 4px;
   resize: none;
   margin: 5px 0px;
+}
+
+input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .about{

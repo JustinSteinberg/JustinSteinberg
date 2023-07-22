@@ -71,10 +71,24 @@ header{
 	grid-column: 1 / 3;
 }
 
+.experience{
+	background-color: #89CAF0;
+	color: white;
+	align-self: center;
+}
+
 .skills{
 	padding: 30px;
 	font-size: 32px;
 	grid-column: 1 / 2;
+
+}
+
+.skills h1{
+	background-color: #F0898C;
+	width: 100%;
+	padding: 10px;
+	color: white;
 }
 
 .skillsDescription{
@@ -111,12 +125,30 @@ header{
 	padding: 30px;
 }
 
-.skills h2{
-	font-size: 30px;
+.skills h2 {
+  font-size: 2rem;
+  position: relative;
+}
+
+h2 span {
+  background-color: white;
+  padding-right: 10px;
+}
+
+.skills h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 3px solid #89CAF0;
+  z-index: -1;
 }
 
 .skills p{
 	padding-top: 20px;
+	line-height: 30px;
 
 }
 
@@ -220,14 +252,24 @@ input[type=submit] {
 	background-position: center;
 	height: 93vh;
 	width: 100%;
+	padding-top: 10vh;
 }
 
 .about h1{
+	font-size: 3rem;
 	padding: 30px;
 	padding-top: 60px;
 	font-size: 38px;
 	grid-row: 2  / 3;
 	grid-column: 1 / 2;
+	background-color: #A3A255;
+	color: white;
+	padding-top: 40px;
+}
+
+.about span{
+	border-bottom: 3px solid white;
+	padding: 1px;
 }
 
 .about-me{
@@ -241,26 +283,27 @@ input[type=submit] {
 .img{
 	grid-column: 2 /4;
 	grid-row: 2 / 3;
-	width: 50%;	
 	height: auto;
-	align-items: center;
+	align-self: center;
 	justify-content: center;
 	overflow: hidden;
 	height: 93vh;
 	width: 50vw;
-
+	display: flex; 
 }
 
 .img img{
 	width: auto;
-	height: 93vh;
+	height: 60vh;
 	position: relative;
-	left: -10vw;
+	align-self: center;
+	border: 3px solid black;
+	margin-bottom: 13vh;
 }
 
 .job{
 	grid-row: 3;
-	padding: 20px;
+	padding: 20px 20px 0px 20px;
 }
 
 .job h2{

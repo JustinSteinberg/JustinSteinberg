@@ -11,13 +11,21 @@ body{
 	grid-template-rows: 1fr 3fr 3fr;
 }
 
+.about-page, .social-page {
+	font-family: 'Roboto', sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 7vh 90vh;
+}
+
 nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
+	height: 7vh;
 	font-style: italic;
 	grid-column: 1 / 4;
+	grid-row: 1;
 }
 
 ul{
@@ -110,6 +118,87 @@ header{
 .skills p{
 	padding-top: 20px;
 
+}
+
+.contact-form{
+	grid-column: 1 / 2;
+	grid-row: 2  / 3;
+	justify-content: center;
+	align-content: center;
+}
+
+
+form{
+	padding: 80px 30px 30px 30px;
+}
+
+label{
+	padding: 10px 0px;
+}
+
+input[type=text]{
+	width: 100%; 
+	border: 3px solid black;
+	border-radius: 4px;
+	padding: 12px 20px 12px 40px;
+	margin: 5px 0px;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  resize: none;
+  margin: 5px 0px;
+}
+
+.about{
+	grid-column: 1 / 2;
+	grid-row: 2  / 3;
+	background-image: url("images/background_img.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 93vh;
+	width: 100%;
+}
+
+.about h1{
+	padding: 30px;
+	padding-top: 60px;
+	font-size: 38px;
+	grid-row: 2  / 3;
+	grid-column: 1 / 2;
+}
+
+.about-me{
+	font-size: 20px;
+	padding: 30px;
+	line-height: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+.img{
+	grid-column: 2 /4;
+	grid-row: 2 / 3;
+	width: 50%;	
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	height: 93vh;
+	width: 50vw;
+
+}
+
+.img img{
+	width: auto;
+	height: 93vh;
+	position: relative;
+	left: -10vw;
 }
 
 .job{

@@ -15,24 +15,11 @@ $(window).resize(function(){
 		$(".logo").removeClass("hover3");
 		$(".community").removeClass("hover5");
 
-		$(".work").stop(true,true).css("flex", "1 0 100%");
-		$(".community").stop(true,true).css("flex", "1 0 100%");
-		$(".about").stop(true,true).css("flex", "1 0 100%");
-		$(".logo").stop(true,true).css("flex", "1 0 100%");
-		$(".connect").stop(true,true).css("flex", "1 0 100%");
-
 	}
 	else {
 
 		console.log("Do Something!");
-
-
-		$(".connect").addClass("hover2");
-		$(".work").addClass("hover1");
-		$(".about").addClass("hover4");
-		$(".logo").addClass("hover3");
-		$(".community").addClass("hover5");
-
+		
 		//* Connect
 		$(".hover2").hover(function(){
 			

@@ -268,6 +268,12 @@ a:hover{
 	letter-spacing: 5px;
 }
 
+.work, .about, .community, .connect, .logo{
+	transition: flex 0.3s, background 0.3s, font-size 0.3s, top 0.3s, margin: 0.3s, left 0.3s,
+	margin-left 0.3s, margin-right 0.3s, height 0.3s, color 0.3s, background-size 0.3s, background-position 0.3s;
+}
+
+
 @media only screen and (max-width: 1210px){
 	.logo:hover{
 			font-size: 38px;

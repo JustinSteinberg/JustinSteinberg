@@ -1,3 +1,8 @@
+
+$(window).ready(function(){
+	$(window).trigger('resize');
+});
+
 $(window).resize(function(){
 	
 	var targetWidth = 756;
@@ -9,6 +14,12 @@ $(window).resize(function(){
 		$(".about").removeClass("hover4");
 		$(".logo").removeClass("hover3");
 		$(".community").removeClass("hover5");
+
+		$(".work").stop(true,true).css("flex", "1 0 100%");
+		$(".community").stop(true,true).css("flex", "1 0 100%");
+		$(".about").stop(true,true).css("flex", "1 0 100%");
+		$(".logo").stop(true,true).css("flex", "1 0 100%");
+		$(".connect").stop(true,true).css("flex", "1 0 100%");
 
 	}
 	else {

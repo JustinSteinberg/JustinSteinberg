@@ -9,6 +9,7 @@ body{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 3fr 3fr;
+	overflow-y: visible;
 }
 
 .about-page, .social-page {
@@ -26,6 +27,7 @@ nav{
 	font-style: italic;
 	grid-column: 1 / 4;
 	grid-row: 1;
+	transition: 0.5s ease-in-out;
 }
 
 ul{
@@ -34,6 +36,7 @@ ul{
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	flex: 1 0 auto;
 }
 
 li{
@@ -44,6 +47,7 @@ li{
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	background-color: white;
 }
 
 a{
@@ -377,4 +381,117 @@ input[type=submit] {
 .job p{
 	padding-top: 20px;
 	line-height: 25px;
+}
+
+#menuToggle{
+	display: none;
+}
+
+.newNavBar{
+	display: none;
+}
+
+@media only screen and (max-width: 756px){
+
+	body{
+		font-family: 'Roboto', sans-serif;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 7vh 1fr;
+	}
+
+	.JS{
+		justify-self: flex-start;
+		flex: 1 0 auto;
+		margin: 20px;
+		font-style: italic;
+		font-size: 30px;
+
+	}
+
+	.JS #logo{
+		width: fit-content;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: black;
+	}
+
+	#logo:hover{
+		color: transparent;
+	}
+
+
+	.newNavBar{
+		display: flex;
+		grid-column: 1 / 4;
+		grid-row: 1;
+		background-color: white;
+		z-index: 10;
+		align-items: center;
+		border: 3px solid black;
+	}
+
+	#menuToggle{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		width: 30px;
+		height: 25px;
+		flex-wrap: wrap;
+		align-self: center;
+		margin: 20px;
+		transition: 0.3s;
+	}
+
+	nav{
+		position: relative;
+		top: -300px;
+		z-index: 2;
+	}
+
+	.logo-li{
+		display: none;
+	}
+
+	ul{
+		flex-wrap: wrap;
+	}
+
+	li{
+		flex: 1 0 100%;
+	}
+
+	.about-li, .skills-li, .connect-li, .experience-li{
+		border-top: none;
+	}
+
+	.btn-line{
+		width: 100%;
+		height: 3px;
+		background: #000;
+		margin: 3px auto;
+		transition: all 0.3s ease;
+	}
+
+	.experience {
+		grid-column: 1 / 3;
+		font-size: 38px;
+		align-self: flex-start;
+		overflow: hidden;
+	}
+
+	.job{
+		grid-column: 1 / 3;
+	}
+
+	.j2{
+		grid-row: 4;
+	}
+
+	.j3{
+		grid-row: 5;
+	}
+	
+
 }

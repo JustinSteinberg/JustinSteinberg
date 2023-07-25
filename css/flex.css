@@ -69,7 +69,7 @@ a:hover{
 	justify-content: space-between;
 	gap: 100px;
 	min-width: 100%;
-	animation: scroll-left 10s linear infinite;
+	animation: scroll-left 20s linear infinite;
 	font-family: 'Roboto', sans-serif;
 
 

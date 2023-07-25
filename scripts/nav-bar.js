@@ -4,11 +4,11 @@ let menuOpen = false;
 
 menuBtn.addEventListener('click', function() {
 	if(!menuOpen){
-		navBar.style.top = "52px";
+		navBar.style.top = "7vh";
 		menuOpen = true;
 	}
 	else{
-		navBar.style.top = "-300px";
+		navBar.style.top = "-50vh";
 		menuOpen = false;
 	}
 });

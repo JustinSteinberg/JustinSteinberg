@@ -310,6 +310,11 @@ a:hover{
 
 
 @media (max-width: 756px){
+
+	div br{
+		display: none !important;
+	}
+
 	.work, .about, .community, .connect, .logo{
 		flex: 1 0 100% !important;
 		height: 18.5vh !important;
@@ -328,12 +333,13 @@ a:hover{
 	.logo{
 		top: 0 !important;
 		order: 1 !important;
+		font-size: 16px;
 	}
 
 	.logo:hover{
 		cursor: pointer;
 		color: #4BC0EF;
-		font-size: 32px;
+		font-size: 22px !important;
 		font-weight: bold;
 		letter-spacing: 5px;
 	}

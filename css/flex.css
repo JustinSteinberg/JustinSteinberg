@@ -330,11 +330,12 @@ a:hover{
 		top: 0 !important;
 		order: 1 !important;
 		font-size: 16px;
+		color: #00539C
 	}
 
 	.logo:hover{
 		cursor: pointer;
-		color: white;
+		color: #00539C;
 		font-size: 22px !important;
 		font-weight: bold;
 		letter-spacing: 5px;

@@ -8,7 +8,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 3fr 3fr;
+	grid-template-rows: 1fr 2fr 3fr;
 	overflow-y: visible;
 }
 
@@ -39,8 +39,12 @@ ul{
 	flex: 1 0 auto;
 }
 
+ul:first-child{
+	border-left: 2px solid black;
+}
+
 li{
-	border: 3px solid black;
+	border: 2px solid black;
 	flex: .2 0 20%;
 	width: 20%;
 	height: 100%;
@@ -48,6 +52,7 @@ li{
 	align-items: center;
 	display: flex;
 	background-color: white;
+	border-left: none;
 }
 
 a{
@@ -66,7 +71,8 @@ nav a{
 }
 
 a:hover{
-	background-color: #F0898C;
+	background-color: #00539C;
+	color: #EEA47F;
 }
 
 header{
@@ -76,9 +82,10 @@ header{
 }
 
 .experience{
-	background-color: #89CAF0;
-	color: white;
+	background-color: #EEA47F;
+	color: #00539C;
 	align-self: center;
+	align-self: flex-start;
 }
 
 .skills{
@@ -89,10 +96,10 @@ header{
 }
 
 .skills h1{
-	background-color: #F0898C;
+	background-color: #EEA47F;
 	width: 100%;
 	padding: 20px;
-	color: white;
+	color: #00539C;
 }
 
 .skillsDescription{
@@ -160,7 +167,7 @@ h2 span {
 	grid-row: 2  / 3;
 	justify-content: center;
 	align-items: center;
-	background-color: #F0898C;
+	background-color: #EEA47F;
 	height: 100%;
 	border: 3px solid black;
 	border-top: none;
@@ -271,7 +278,9 @@ h2 span {
 }
 
 header.contact{
-	padding-left: 30px;
+	color: #00539C;
+	font-size: 40px;
+	text-align: center;
 }
 
 form{
@@ -324,24 +333,24 @@ input[type=submit] {
 
 .about h1{
 	font-size: 3rem;
-	padding: 30px;
+	padding: 40px;
 	padding-top: 60px;
 	font-size: 38px;
 	grid-row: 2  / 3;
 	grid-column: 1 / 2;
-	background-color: #A3A255;
-	color: white;
+	background-color: #EEA47F;
+	color: #00539C;
 	padding-top: 40px;
 }
 
 .about span{
-	border-bottom: 3px solid white;
-	padding: 1px;
+	padding-bottom: 5px;
+	font-style: italic;
 }
 
 .about-me{
 	font-size: 20px;
-	padding: 30px;
+	padding: 40px;
 	line-height: 40px;
 	align-items: center;
 	justify-content: center;
@@ -353,19 +362,19 @@ input[type=submit] {
 	height: auto;
 	align-self: center;
 	justify-content: center;
+	justify-self: center;
 	overflow: hidden;
-	height: 93vh;
-	width: 50vw;
+	height: 100vh;
+	width: 30vw;
 	display: flex; 
-	margin-top: 20vh;
+	margin-top: 16vh;
 }
 
 .img img{
-	width: 90vw;
+	width: 60vw;
 	height: auto;
 	position: relative;
 	align-self: center;
-	border: 3px solid black;
 	margin-bottom: 13vh;
 }
 
@@ -504,8 +513,13 @@ input[type=submit] {
 		flex-wrap: wrap;
 	}
 
+	ul:first-child{
+		border-left: 0px solid black;
+	}
+
 	li{
 		flex: 1 0 100%;
+		border-left: 2px solid black;
 	}
 
 	.about-li, .skills-li, .connect-li, .experience-li{
@@ -561,8 +575,6 @@ input[type=submit] {
 		font-size: 2rem;
 		padding: 30px;
 		padding-top: 50px;
-		background-color: #A3A255;
-		color: white;
 		padding-top: 30px;
 		text-align: center;
 	}

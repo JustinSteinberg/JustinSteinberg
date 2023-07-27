@@ -374,6 +374,27 @@ input[type=submit] {
 	margin-bottom: 13vh;
 }
 
+.button1{
+		margin-left: 40px;
+		margin-bottom: 40px;
+		background-color: #00539C;
+	  border: none;
+	  color: #EEA47F;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+  	cursor: pointer;
+  	transition: 0.3s;
+	}
+
+.button1:hover, .button1:focus {
+  box-shadow: 0 0.6em 0.6em -0.4em black;
+  transform: translateY(-0.25em);
+}
+
+
 .job{
 	grid-row: 3;
 	padding: 20px 20px 0px 20px;
@@ -574,6 +595,7 @@ input[type=submit] {
 		padding-top: 30px;
 		text-align: center;
 	}
+
 
 	.img{
 		grid-column: 1 / 3;

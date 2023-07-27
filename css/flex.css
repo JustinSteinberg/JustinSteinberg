@@ -505,7 +505,7 @@ div.preload-images {
    		background-position: bottom;
 	}
 
-	.logo:hover, .logo:active{
+	.logo:hover, .logo:focus{
 		cursor: pointer;
 		color: #00539C;
 		font-size: 22px !important;

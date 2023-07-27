@@ -322,10 +322,6 @@ input[type=submit] {
 .about{
 	grid-column: 1 / 2;
 	grid-row: 2  / 3;
-	background-image: url("images/background_img.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	height: 93vh;
 	width: 100%;
 	padding-top: 10vh;

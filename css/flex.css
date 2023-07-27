@@ -6,7 +6,7 @@
 
 body{
 	background-color: black;
-	overflow-y: visible;
+	overflow-y: hidden;
 }
 
 a{
@@ -206,7 +206,170 @@ a:hover{
 	transition: 0.3s ease;
    /* border-left-width: 0;
     border-right-width: 0;*/
+    max-width: 40vw;
+    min-width: 20vw;
+    background-size: 40vw 100vh;
+    background-position: center;
+}
 
+
+div.preload-images {
+  background: url('images/IMG_1.JPG') no-repeat;
+  background: url('images/IMG_2.JPG') no-repeat,
+    url('images/IMG_3.JPG') no-repeat,
+    url('images/IMG_4.JPG') no-repeat,
+    url('images/IMG_5.JPG')no-repeat,
+    url('images/IMG_6.JPG') no-repeat,
+    url('images/IMG_7.jpeg') no-repeat,
+    url('images/IMG_8.JPG') no-repeat,
+    url('images/IMG_9.JPG') no-repeat,
+    url('images/IMG_10.JPG') no-repeat;
+    z-index: -1;
+}
+
+@keyframes scrolling-background{
+	0%{
+		background-image: url('images/IMG_1.JPG');
+		opacity: 0.8;
+		-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	10%{
+		background-image: url("images/IMG_2.JPG");
+		opacity: 0.8;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	20%{
+		background-image: url("images/IMG_3.JPG");
+		opacity: 0.8;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	30%{
+		background-image: url('images/IMG_4.JPG');
+		opacity: 0.8;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	40%{
+		background-image: url('images/IMG_5.JPG');
+		opacity: 0.8;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	50%{
+		background-image: url('images/IMG_6.JPG');
+		opacity: 0.8;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	60%{
+		background-image: url('images/IMG_7.jpeg');
+		opacity: 0.8;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	70%{
+		background-image: url('images/IMG_8.JPG');
+		opacity: 0.7;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	80%{
+		background-image: url('images/IMG_9.JPG');
+		opacity: 0.7;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+
+	90%{
+		background-image: url('images/IMG_10.JPG');
+		opacity: 0.6;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+	100%{
+		background-image: url('images/IMG_10.JPG');
+		opacity: 0.6;
+	-webkit-text-stroke-width: 1px;
+   		-webkit-text-stroke-color: white;
+	}
+}
+
+@-webkit-keyframes scrolling-background{
+	0%{
+		background-image: url('images/IMG_1.JPG');
+		opacity: 0.8;
+
+	}
+
+	10%{
+		background-image: url("images/IMG_2.JPG");
+		opacity: 0.8;
+
+	}
+
+	20%{
+		background-image: url("images/IMG_3.JPG");
+		opacity: 0.8;
+
+	}
+
+	30%{
+		background-image: url('images/IMG_4.JPG');
+		opacity: 0.8;
+
+	}
+
+	40%{
+		background-image: url('images/IMG_5.JPG');
+		opacity: 0.8;
+
+	}
+
+	50%{
+		background-image: url('images/IMG_6.JPG');
+		opacity: 0.8;
+
+	}
+
+	60%{
+		background-image: url('images/IMG_7.jpeg');
+		opacity: 0.8;
+
+	}
+
+	70%{
+		background-image: url('images/IMG_8.JPG');
+		opacity: 0.7;
+
+	}
+
+	80%{
+		background-image: url('images/IMG_9.JPG');
+		opacity: 0.7;
+
+	}
+
+	90%{
+		background-image: url('images/IMG_10.JPG');
+		opacity: 0.7;
+
+	}
+	100%{
+		background-image: url('images/IMG_10.JPG');
+		opacity: 0.7;
+
+	}
 }
 
 .logo:hover{
@@ -215,6 +378,12 @@ a:hover{
 	font-size: 42px;
 	font-weight: bold;
 	letter-spacing: 5px;
+	animation-name: scrolling-background; 
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	-webkit-animation-name: scrolling-background; 
+	-webkit-animation-duration: 4s;
+	-webkit-animation-timing-function: linear;
 }
 
 
@@ -330,7 +499,10 @@ a:hover{
 		top: 0 !important;
 		order: 1 !important;
 		font-size: 16px;
-		color: #00539C
+		color: #00539C;
+   		max-width: 100vw;
+   		background-size: 100vw 100vh;
+   		background-position: bottom;
 	}
 
 	.logo:hover{

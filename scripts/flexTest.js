@@ -19,7 +19,7 @@ $(window).resize(function(){
 	else {
 
 		console.log("Do Something!");
-		
+
 		//* Connect
 		$(".hover2").hover(function(){
 			

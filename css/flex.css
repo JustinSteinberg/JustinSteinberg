@@ -441,7 +441,7 @@ div.preload-images {
 
 @media only screen and (max-width: 1210px){
 	.logo:hover{
-			font-size: 38px;
+			font-size: 34px;
 		}	
 }
 
@@ -505,12 +505,18 @@ div.preload-images {
    		background-position: bottom;
 	}
 
-	.logo:hover{
+	.logo:hover, .logo:active{
 		cursor: pointer;
 		color: #00539C;
 		font-size: 22px !important;
 		font-weight: bold;
 		letter-spacing: 5px;
+		animation-name: scrolling-background; 
+		animation-duration: 4s;
+		animation-timing-function: linear;
+		-webkit-animation-name: scrolling-background; 
+		-webkit-animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
 	}
 
 

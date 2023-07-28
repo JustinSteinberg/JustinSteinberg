@@ -81,7 +81,7 @@ a:hover{
 		transform: translateX(0%);
 	}
 	100%{
-		transform: translateX(calc(-100% - 100px));
+		transform: translateX(calc(-100% - 10vh));
 	}
 }
 

@@ -435,8 +435,10 @@ input[type=submit] {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     color: black;
     position: relative;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     overflow: hidden;
+    background-color: white;
   }
 
 .j1{
@@ -444,6 +446,7 @@ input[type=submit] {
     grid-column: 1;
     position: relative;
     z-index: 1;
+    transition: 0.3s ease;
 }
 
 .j2{
@@ -451,6 +454,8 @@ input[type=submit] {
     grid-column: 2;
     position: relative;
     z-index: 1;
+    transition: 0.3s ease;
+
 }
 
 .j3{
@@ -458,23 +463,26 @@ input[type=submit] {
     grid-column: 3;
     position: relative;
     z-index: 1;
-}
-
-#experience:has(.j1:hover) {
-  grid-template-columns: 1fr 0.5fr 0.5fr;
-  box-shadow: 0 3px 10px #00539C;
+    transition: 0.3s ease;
 
 }
 
-#experience:has(.j2:hover) {
-  grid-template-columns: 0.5fr 1fr 0.5fr;
-  box-shadow: 0 3px 10px #00539C;
+.j1:hover {
+   box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+   transform: translateY(-3px) scale(1.1);
+   z-index: 2;
+}
+
+.j2:hover{
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+    z-index: 2;
 
 }
-#experience:has(.j3:hover) {
-  grid-template-columns: 0.5fr 0.5fr 1fr;
-  box-shadow: 0 3px 10px #00539C;
-
+.j3:hover{
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+    z-index: 2;
 }
 
 .job h2{
@@ -670,6 +678,7 @@ input[type=submit] {
 
 	.job{
 		grid-column: 1 / 4;
+		margin: 10px;
 	}
 
 	.j1{

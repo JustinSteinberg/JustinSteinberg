@@ -81,11 +81,30 @@ header{
 	grid-column: 1 / 3;
 }
 
+#experience{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, minmax(0,10vh));
+    overflow-y: visible;
+    transition: 0.3s;
+}
+
+header.experience{
+	grid-column: 1 / 4;
+}
+
 .experience{
+	padding: 20px 0 20px 0px;
+}
+
+.head{
+	display: flex;
+	width: 60%;
+	padding: 20px;
 	background-color: #EEA47F;
+	align-items: flex-start;
 	color: #00539C;
-	align-self: center;
-	align-self: flex-start;
 }
 
 .skills{
@@ -191,6 +210,22 @@ h2 span {
 
 .fa-4x{
 	font-size: 6em;
+}
+
+.social-media a{
+	width: fit-content;
+	height: fit-content;
+}
+
+a.sym1:hover{
+	background-color: white;
+	color: black;
+}
+
+a.sym2:hover{
+	background-color: white;
+	color: black;
+
 }
 
 .sym1{
@@ -396,8 +431,50 @@ input[type=submit] {
 
 
 .job{
-	grid-row: 3;
-	padding: 20px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    color: black;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+.j1{
+    grid-row: 5/9;
+    grid-column: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.j2{
+    grid-row: 6/10;
+    grid-column: 2;
+    position: relative;
+    z-index: 1;
+}
+
+.j3{
+    grid-row: 5/9;
+    grid-column: 3;
+    position: relative;
+    z-index: 1;
+}
+
+#experience:has(.j1:hover) {
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  box-shadow: 0 3px 10px #00539C;
+
+}
+
+#experience:has(.j2:hover) {
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  box-shadow: 0 3px 10px #00539C;
+
+}
+#experience:has(.j3:hover) {
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  box-shadow: 0 3px 10px #00539C;
+
 }
 
 .job h2{
@@ -421,11 +498,28 @@ input[type=submit] {
 	display: none;
 }
 
+.thank-you{
+	  text-align: center;
+    color: #00539C;
+    background-color: #EEA47F;
+    grid-row: 2 / 2;
+    grid-column: 1 / 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 42px;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 1040px){
 
 	body.skillsGrid{
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 7vh 1fr;
+	}
+
+	.head{
+		font-size: 26px;
 	}
 
 	.skills {
@@ -468,6 +562,11 @@ input[type=submit] {
 	body{
 		font-family: 'Roboto', sans-serif;
 		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 7vh 1fr;
+	}
+
+	#experience{
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 7vh 1fr;
 	}
@@ -556,23 +655,47 @@ input[type=submit] {
 
 
 	header.experience {
-		grid-column: 1 / 3;
+		grid-column: 1 / 4;
 		font-size: 26px;
 		align-self: flex-start;
 		overflow: hidden;
+    padding-top: 0;
 	}
 
+	.head{
+		font-size: 20px;
+		width: 100%;
+	}
+
+
 	.job{
-		grid-column: 1 / 3;
+		grid-column: 1 / 4;
+	}
+
+	.j1{
+		grid-template-rows: 10vh;
+		grid-row: 4 / 9
 	}
 
 	.j2{
-		grid-row: 4;
+		grid-row:  9 / 15;
 	}
 
 	.j3{
-		grid-row: 5;
+		grid-row: 15 / 20;
 	}
+
+	#experience:has(.j1:hover) {
+	  grid-template-columns: 1fr;
+	}
+
+	#experience:has(.j2:hover) {
+	  grid-template-columns: 1fr;
+	}
+	#experience:has(.j3:hover) {
+	  grid-template-columns: 1fr;
+	}
+
 
 	.about-page{
 		font-family: 'Roboto', sans-serif;

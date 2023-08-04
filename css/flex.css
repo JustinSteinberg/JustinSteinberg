@@ -55,11 +55,10 @@ a:hover{
 }
 
 .marquee-group span{
-
 	color: black;
 	white-space: nowrap;
 	font-size: 20px;
-
+	font-style: italic;
 }
 
 
@@ -70,7 +69,7 @@ a:hover{
 	justify-content: space-between;
 	gap: 100px;
 	min-width: 100%;
-	animation: scroll-left 20s linear infinite;
+	animation: scroll-left 25s linear infinite;
 	font-family: 'Roboto', sans-serif;
 
 
@@ -81,7 +80,7 @@ a:hover{
 		transform: translateX(0%);
 	}
 	100%{
-		transform: translateX(calc(-100% - 10vh));
+		transform: translateX(calc(-100% - 100px));
 	}
 }
 

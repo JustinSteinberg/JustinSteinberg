@@ -27,6 +27,7 @@ const handleTouchMove = (event) => {
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 };
 
-
 window.addEventListener("mousemove", handleMouseMove);
 window.addEventListener("touchmove", handleTouchMove);
+//window.addEventListener("touchstart", handleTouchStart);
+

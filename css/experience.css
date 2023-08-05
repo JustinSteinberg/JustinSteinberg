@@ -856,9 +856,9 @@ input[type=submit] {
 		grid-column: 1 / 3;
 		grid-row: 3 / 4;
 		padding: 20px;
-		width: 80vw;
+		width: 100vw;
 		padding-top: 0;
-		margin: 30px;
+		margin-top: 30px;
 	}
 
 .scene{

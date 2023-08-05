@@ -855,10 +855,19 @@ input[type=submit] {
 		grid-column: 1 / 3;
 		grid-row: 3 / 4;
 		padding: 20px;
-		width: 100%;
+		width: 80vw;
 		padding-top: 0;
 		margin: 30px;
 	}
+
+.scene{
+	margin: 10px;
+	width: 100%;
+	height: 100%;
+	perspective: 600px;
+	display: flex;
+	justify-content: center;
+}
 
 	.skill-1{
 		grid-column: 1 / 3;

@@ -164,6 +164,8 @@ header.experience{
 	-moz-user-select: none; // Firefox
   -webkit-text-select: none; // IOS Safari
   -webkit-user-select: none; // Safari
+  transform: rotateX(45deg) rotateZ(-45deg);
+  -webkit-transform: rotateX(45deg) rotateZ(45deg);
 }
 
 .cube-face {

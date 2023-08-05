@@ -28,6 +28,6 @@ const handleTouchMove = (event) => {
 };
 
 window.addEventListener("mousemove", handleMouseMove);
-window.addEventListener("touchmove", handleTouchMove);
+cube.addEventListener("touchmove", handleTouchMove);
 //window.addEventListener("touchstart", handleTouchStart);
 

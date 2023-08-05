@@ -158,6 +158,7 @@ header.experience{
   height: 150px;
   position: relative;
   transform-style: preserve-3d;
+  touch-action: none;
 }
 
 .cube-face {

@@ -1,6 +1,6 @@
 const cube = document.querySelector(".cube");
-let mouseX = 0;
-let mouseY = 0;
+let mouseX;
+let mouseY;
 const rotationValue = 270;
 
 const handleMouseMove = (event) => {
@@ -16,8 +16,8 @@ const handleMouseMove = (event) => {
 };
 
 const handleTouchMove = (event) => {
-	mouseX = event.touches[0].clientX;
-	mouseY = event.touches[0].clientY;
+	mouseX = event.touches[0].pageX;
+	mouseY = event.touches[0].pageY;
 	console.log("TouchX: ", mouseX);
 	console.log("TouchY: ", mouseY);
 	rotateX = -(mouseY / window.innerHeight - 0.5) * rotationValue;

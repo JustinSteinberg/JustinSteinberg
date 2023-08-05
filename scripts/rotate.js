@@ -25,7 +25,16 @@ const handleTouchMove = (event) => {
 	console.log("rotateX: ", rotateX);
 	console.log("rotate: ", rotateY);
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
 };
+
+cube.addEventListener('touchstart', function(e) {
+    document.documentElement.style.overflow = 'hidden';
+});
+
+cube.addEventListener('touchend', function(e) {
+    document.documentElement.style.overflow = 'auto';
+});
 
 window.addEventListener("mousemove", handleMouseMove);
 cube.addEventListener("touchmove", handleTouchMove);

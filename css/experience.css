@@ -869,6 +869,10 @@ input[type=submit] {
 	justify-content: center;
 }
 
+.cube-face{
+	font-size: 18px;
+}
+
 	.skill-1{
 		grid-column: 1 / 3;
 		grid-row : 4 / 5;

@@ -21,7 +21,8 @@ const handleMouseMove = (event) => {
 };
 
 const handleTouchMove = (event) => {
-	
+	document.documentElement.style.overflow = 'hidden';
+
 	mouseX = event.touches[0].pageX;
 	mouseY = event.touches[0].pageY;
 	console.log("TouchX: ", mouseX);
@@ -34,6 +35,7 @@ const handleTouchMove = (event) => {
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 	cube.dataset.rotateX = rotateX;
 	cube.dataset.rotateY = rotateY;
+ 
 };
 
 cube.addEventListener('touchstart', function(e) {

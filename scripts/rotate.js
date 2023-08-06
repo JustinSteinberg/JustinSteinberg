@@ -35,15 +35,15 @@ const handleTouchMove = (event) => {
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 	cube.dataset.rotateX = rotateX;
 	cube.dataset.rotateY = rotateY;
-  	var x=window.scrollX;
-   var y=window.scrollY;
-   window.onscroll=function(){window.scrollTo(x, y);};
+ 
 };
 
 cube.addEventListener('touchstart', function(e) {
 
    document.documentElement.style.overflow = 'hidden';
-  
+   var x=window.scrollX;
+   var y=window.scrollY;
+   window.onscroll=function(){window.scrollTo(x, y);};
 });
 
 cube.addEventListener('touchend', function(e) {

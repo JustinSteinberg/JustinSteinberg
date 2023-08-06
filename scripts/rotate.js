@@ -23,8 +23,8 @@ const handleTouchMove = (event) => {
 	mouseX = event.touches[0].pageX;
 	mouseY = event.touches[0].pageY;
 
-	rotateX = (-((mouseY*1.5)/ window.innerHeight - 0.5) * rotationValue) + parseInt(cube.dataset.dataX);
-	rotateY = (((mouseX*1.5)/ window.innerWidth - 0.5)  * rotationValue) + parseInt(cube.dataset.dataY);
+	rotateX = (-((mouseY*1.25)/ window.innerHeight - 0.5) * rotationValue) + parseInt(cube.dataset.dataX);
+	rotateY = (((mouseX*1.25)/ window.innerWidth - 0.5)  * rotationValue) + parseInt(cube.dataset.dataY);
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 	cube.dataset.rotateX = rotateX;
 	cube.dataset.rotateY = rotateY;

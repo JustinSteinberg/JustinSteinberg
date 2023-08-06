@@ -41,16 +41,13 @@ const handleTouchMove = (event) => {
 cube.addEventListener('touchstart', function(e) {
 
    document.documentElement.style.overflow = 'hidden';
-   var x=window.scrollX;
-   var y=window.scrollY;
-   window.onscroll=function(){window.scrollTo(x, y);};
+  
 });
 
 cube.addEventListener('touchend', function(e) {
    document.documentElement.style.overflow = 'auto';
 	cube.dataset.dataX = parseInt(cube.dataset.rotateX);
 	cube.dataset.dataY = parseInt(cube.dataset.rotateY);
-	window.onscroll=function(){};
 
 });
 

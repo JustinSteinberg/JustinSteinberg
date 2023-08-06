@@ -42,6 +42,7 @@ const handleTouchMove = (event) => {
 cube.addEventListener('touchstart', function(e) {
 
    document.documentElement.style.overflow = 'hidden';
+   e.preventDefault();
   
 });
 

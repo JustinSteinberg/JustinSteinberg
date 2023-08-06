@@ -1,4 +1,5 @@
 const cube = document.querySelector(".cube");
+const scene = document.querySelector(".scene")
 let mouseX = 0;
 let mouseY = 0;
 let prevRotateX = 0;
@@ -44,11 +45,19 @@ cube.addEventListener('touchstart', function(e) {
   
 });
 
+scene.addEventListener('touchstart', function(e){
+	document.documentElement.style.overflow = 'hidden';
+});
+
 cube.addEventListener('touchend', function(e) {
    document.documentElement.style.overflow = 'auto';
 	cube.dataset.dataX = parseInt(cube.dataset.rotateX);
 	cube.dataset.dataY = parseInt(cube.dataset.rotateY);
 
+});
+
+scene.addEventListener('touchend', function(e){
+   document.documentElement.style.overflow = 'auto';
 });
 
 window.addEventListener("mousemove", handleMouseMove);

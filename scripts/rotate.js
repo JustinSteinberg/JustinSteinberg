@@ -7,7 +7,7 @@ let prevRotateY = 0;
 let rotateX = 0;
 let rotateXY = 0;
 
-const rotationValue = 270;
+const rotationValue = 300;
 
 const handleMouseMove = (event) => {
 	mouseX = event.clientX;

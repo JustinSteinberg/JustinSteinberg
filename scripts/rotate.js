@@ -12,12 +12,8 @@ const rotationValue = 300;
 const handleMouseMove = (event) => {
 	mouseX = event.clientX;
 	mouseY = event.clientY;
-	console.log("MouseX: ", mouseX);
-	console.log("MouseY: ", mouseY);
 	rotateX = -(mouseY / window.innerHeight - 0.5) * rotationValue;
 	rotateY = (mouseX / window.innerWidth - 0.5) * rotationValue;
-	console.log("rotateX: ", rotateX);
-	console.log("rotate: ", rotateY);
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 };
 
@@ -26,13 +22,9 @@ const handleTouchMove = (event) => {
 
 	mouseX = event.touches[0].pageX;
 	mouseY = event.touches[0].pageY;
-	console.log("TouchX: ", mouseX);
-	console.log("TouchY: ", mouseY);
 
-	rotateX = (-(mouseY / window.innerHeight - 0.5) * rotationValue) + parseInt(cube.dataset.dataX);
-	rotateY = ((mouseX/ window.innerWidth - 0.5)  * rotationValue) + parseInt(cube.dataset.dataY);
-	console.log("rotateX: ", rotateX);
-	console.log("rotateY: ", rotateY);
+	rotateX = (-((mouseY*1.5)/ window.innerHeight - 0.5) * rotationValue) + parseInt(cube.dataset.dataX);
+	rotateY = (((mouseX*1.5)/ window.innerWidth - 0.5)  * rotationValue) + parseInt(cube.dataset.dataY);
 	cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 	cube.dataset.rotateX = rotateX;
 	cube.dataset.rotateY = rotateY;

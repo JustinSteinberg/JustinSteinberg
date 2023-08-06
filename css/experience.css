@@ -168,7 +168,6 @@ header.experience{
   -webkit-user-select: none; // Safari
   transform: rotateX(45deg) rotateZ(-45deg);
   -webkit-transform: rotateX(45deg) rotateZ(45deg);
-  transition: 0.75s;
 }
 
 .cube-face {
@@ -878,6 +877,10 @@ input[type=submit] {
 	perspective: 600px;
 	display: flex;
 	justify-content: center;
+}
+
+.cube{
+	transition: 0.75s;
 }
 
 .cube-face{

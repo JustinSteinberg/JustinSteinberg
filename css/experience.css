@@ -87,6 +87,7 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(10, minmax(0,10vh));
     overflow-y: visible;
+    overflow-x: hidden;
     transition: 0.3s;
 }
 
@@ -531,6 +532,29 @@ input[type=submit] {
   transform: translateY(-0.25em);
 }
 
+.resume{
+		background-color: #00539C;
+	  border: none;
+	  color: #EEA47F;
+	  padding: 20px;
+	  height: 57px;
+	  text-align: center;
+	  text-decoration: none;
+	  font-size: 16px;
+  	cursor: pointer;
+  	transition: 0.3s;
+  	grid-column: 3 / 3;
+  	grid-row: 1;
+  	margin-top: 90px;
+  	margin-right: 40px;
+  	justify-self: end;
+}
+
+.resume:hover, .resume:focus {
+  box-shadow: 0 0.6em 0.6em -0.4em black;
+  transform: translateY(-0.25em);
+}
+
 
 .job{
     padding: 20px 20px 20px 20px;
@@ -814,6 +838,12 @@ input[type=submit] {
 	  grid-template-columns: 1fr;
 	}
 
+	.resume{
+		grid-row: 20 / 22;
+		grid-column: 2 / 3;
+		margin: 20px;
+		justify-self: center;
+	}
 
 	.about-page{
 		font-family: 'Roboto', sans-serif;
@@ -945,5 +975,6 @@ input[type=submit] {
 		font-size: 30px;
 		padding: 20px;
 	}
+
 
 }

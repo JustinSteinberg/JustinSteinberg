@@ -488,6 +488,11 @@ input[type=submit] {
 	line-height: 40px;
 	align-items: center;
 	justify-content: center;
+	font-weight: 300;
+}
+
+.about-bold{
+	color: #00539C;
 }
 
 .img{

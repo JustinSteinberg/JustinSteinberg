@@ -1,5 +1,5 @@
 const cube = document.querySelector(".cube");
-const scene = document.querySelector(".scene")
+const scene = document.querySelector(".scene");
 let mouseX = 0;
 let mouseY = 0;
 let prevRotateX = 0;

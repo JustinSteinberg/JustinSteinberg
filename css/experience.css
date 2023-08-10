@@ -71,8 +71,8 @@ nav a{
 }
 
 a:hover{
-	background-color: #00539C;
-	color: #EEA47F;
+	background-color: #264653;
+	color: #e9C46A;
 }
 
 header{
@@ -93,6 +93,7 @@ header{
 
 header.experience{
 	grid-column: 1 / 4;
+	grid-row: 2 / 4;
 }
 
 .experience{
@@ -103,9 +104,10 @@ header.experience{
 	display: flex;
 	width: 60%;
 	padding: 20px;
-	background-color: #EEA47F;
+	background-color: #E9C46A;
 	align-items: flex-start;
-	color: #00539C;
+	color: #264653;
+	font-style: italic;
 }
 
 .skills{
@@ -116,10 +118,11 @@ header.experience{
 }
 
 .skills h1{
-	background-color: #EEA47F;
+	background-color: #E9C46A;
 	width: 100%;
 	padding: 20px;
-	color: #00539C;
+	color: #264653;
+	font-style: italic;
 }
 
 .skillsDescription{
@@ -289,7 +292,7 @@ h2 span {
 	grid-row: 2  / 3;
 	justify-content: center;
 	align-items: center;
-	background-color: #EEA47F;
+	background-color: #e9C46A;
 	height: 100%;
 	border: 3px solid black;
 	border-top: none;
@@ -416,7 +419,7 @@ a.sym2:hover{
 }
 
 header.contact{
-	color: #00539C;
+	color: #264653;
 	font-size: 40px;
 	text-align: center;
 }
@@ -472,8 +475,8 @@ input[type=submit] {
 	font-size: 38px;
 	grid-row: 2  / 3;
 	grid-column: 1 / 2;
-	background-color: #EEA47F;
-	color: #00539C;
+	background-color: #E9C46A;
+	color: #264653;
 	padding-top: 40px;
 }
 
@@ -492,7 +495,7 @@ input[type=submit] {
 }
 
 .about-bold{
-	color: #00539C;
+	color: black;
 }
 
 .img{
@@ -520,9 +523,9 @@ input[type=submit] {
 .button1{
 		margin-left: 40px;
 		margin-bottom: 40px;
-		background-color: #00539C;
+		background-color: #264653;
 	  border: none;
-	  color: #EEA47F;
+	  color: #e9C46A;
 	  padding: 15px 32px;
 	  text-align: center;
 	  text-decoration: none;
@@ -538,9 +541,9 @@ input[type=submit] {
 }
 
 .resume{
-		background-color: #00539C;
+		background-color: #264653;
 	  border: none;
-	  color: #EEA47F;
+	  color: #e9C46A;
 	  padding: 20px;
 	  height: 57px;
 	  text-align: center;
@@ -585,8 +588,21 @@ input[type=submit] {
     grid-column: 2;
     position: relative;
     z-index: 1;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    width: 32vw;
+    height: 45vh;
+}
 
+.j2.expand{
+	/*grid-column: 1 / 4;
+	grid-row: 1 / 11;*/
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	z-index: 10;
+	transform: translateY(-50vh) translateX(-8vh);
+	top: 0;
+	left: 0;
 }
 
 .j3{
@@ -595,7 +611,20 @@ input[type=submit] {
     position: relative;
     z-index: 1;
     transition: 0.3s ease;
+}
 
+.closeJob{
+	visibility: hidden;
+	position: absolute;
+	padding: 10px;
+	margin: 10px;
+	top: 0;
+	right: 0;
+	transition: 0.3s;
+}
+
+.closeJob:hover{
+	background-color: red;
 }
 
 .j1:hover {
@@ -604,12 +633,13 @@ input[type=submit] {
    z-index: 2;
 }
 
-.j2:hover{
+.j2:not(.expand):hover{
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
     z-index: 2;
-
+    transition: 0.3s;
 }
+
 .j3:hover{
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
     transform: translateY(-3px) scale(1.1);
@@ -839,6 +869,7 @@ input[type=submit] {
 	#experience:has(.j2:hover) {
 	  grid-template-columns: 1fr;
 	}
+
 	#experience:has(.j3:hover) {
 	  grid-template-columns: 1fr;
 	}

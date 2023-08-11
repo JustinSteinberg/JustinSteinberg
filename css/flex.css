@@ -17,12 +17,11 @@ a{
 	align-items: center;
 	text-decoration: none;
 	color: black;
-;
 	transition: color 0.3s ease;
 }
 
 a:hover{
-	color: #264653;
+	color: #74F8CB;
 }
 
 .marquee{
@@ -102,7 +101,7 @@ a:hover{
 
 .work, .about, .connect, .community, .logo{
 	background-color: #FFFFFF; 
-	background-image: linear-gradient(#E9C46A, #E9C46A);
+	background-image: linear-gradient(#F8CB74, #F8CB74);
   	background-repeat: no-repeat;
  	transition: background-size .1s, color .1s;
  	text-transform: uppercase;
@@ -373,7 +372,7 @@ div.preload-images {
 
 .logo:hover{
 	cursor: pointer;
-	color: #264653;
+	color: #74F8CB;
 	font-size: 40px;
 	font-weight: bold;
 	letter-spacing: 5px;
@@ -479,6 +478,10 @@ div.preload-images {
 		display: none !important;
 	}
 
+	.marquee{
+		border-top: 4px solid black;
+	}
+
 	.work, .about, .community, .connect, .logo{
 		flex: 1 0 100% !important;
 		height: 18.5vh !important;
@@ -498,7 +501,7 @@ div.preload-images {
 		top: 0 !important;
 		order: 1 !important;
 		font-size: 16px;
-		color: #264653;
+		color: #74F8CB;
    		max-width: 100vw;
    		background-size: 100vw 100vh;
    		background-position: bottom;
@@ -506,7 +509,7 @@ div.preload-images {
 
 	.logo:hover, .logo:focus{
 		cursor: pointer;
-		color: #264653;
+		color: #74F8CB;
 		font-size: 22px !important;
 		font-weight: bold;
 		letter-spacing: 5px;

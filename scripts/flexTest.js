@@ -14,7 +14,13 @@ $(window).resize(function(){
 		$(".about").removeClass("hover4");
 		$(".logo").removeClass("hover3");
 		$(".community").removeClass("hover5");
-
+	
+		$(".marquee").css("height", window.innerHeight * 0.08 + 'px');
+		$(".connect").css("height", window.innerHeighht * 0.184 + 'px');
+		$(".work").css("height", window.innerHeight * 0.184 + 'px');
+		$(".about").css("height", window.innerHeight * 0.184 + 'px');
+		$(".logo").css("height", window.innerHeight * 0.184 + 'px');
+		$(".community").css("height", window.innerHeight * 0.184 + 'px');
 
 		$(".logo").on('touchstart touchend', function(e) {
 
@@ -56,6 +62,12 @@ $(window).resize(function(){
 		$(".about").addClass("hover4");
 		$(".logo").addClass("hover3");
 		$(".community").addClass("hover5");
+
+		$(".logo").css("height", "20vh");
+		$(".work").css("height", "40vh");
+		$(".connect").css("height", "60vh");
+		$(".community").css("height", "40vh");
+		$(".about").css("height", "60vh");
 
 		//* Connect
 		$(".hover2").hover(function(){

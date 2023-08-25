@@ -102,7 +102,7 @@ a:hover{
 .work, .about, .connect, .community, .logo{
 	background-color: #FFFFFF; 
 	background-image: linear-gradient(#F8CB74, #F8CB74);
-  	background-repeat: no-repeat;
+  background-repeat: no-repeat;
  	transition: background-size .1s, color .1s;
  	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
@@ -490,6 +490,7 @@ div.preload-images {
 		top: 0 !important;
 		margin-left: 0 !important;
 		margin-right: 0 !important;
+		background-image: none;
 	}
 
 	.flex-container-2{
@@ -501,11 +502,12 @@ div.preload-images {
 	.logo{
 		top: 0 !important;
 		order: 1 !important;
+		background-color: #F8CB74;
 		font-size: 16px;
 		color: #74F8CB;
-   		max-width: 100vw;
-   		background-size: 100vw 100vh;
-   		background-position: bottom;
+ 		max-width: 100vw;
+ 		background-size: 100vw 100vh;
+ 		background-position: bottom;
 	}
 
 	.logo:hover, .logo:focus{
@@ -547,7 +549,7 @@ div.preload-images {
 		font-size: 32px;
 		font-weight: bold;
 		letter-spacing: 5px;
-		background-color: #F0898C
+		background-color: #F8CB74
 	}
 
 	.connect{
@@ -561,7 +563,7 @@ div.preload-images {
 			font-size: 32px;
 			font-weight: bold;
 			letter-spacing: 5px;
-			background-color: #F0898C
+			background-color: #F8CB74
 		}
 
 

@@ -521,6 +521,19 @@ div.preload-images {
 		-webkit-animation-timing-function: linear;
 	}
 
+	.logo-hover{
+		cursor: pointer;
+		color: #74F8CB;
+		font-size: 22px !important;
+		font-weight: bold;
+		letter-spacing: 5px;
+		animation-name: scrolling-background; 
+		animation-duration: 4s;
+		animation-timing-function: linear;
+		-webkit-animation-name: scrolling-background; 
+		-webkit-animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+	}
 
 	.work{
 		order: 2 !important;

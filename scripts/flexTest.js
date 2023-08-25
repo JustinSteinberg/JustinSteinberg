@@ -16,12 +16,12 @@ $(window).resize(function(){
 		$(".community").removeClass("hover5");
 
 
-		//$(".logo").addEventListener('touchstart', function(e) {
+		$(".logo").on({'touchstart' : function(e) {
 
-	   	//document.documentElement.style.overflow = 'hidden';
-	    //e.preventDefault();
-  	
-		//});
+				$(".logo").toggleClass(".logo-hover");
+
+  			}
+		});
 
 	}
 	else {

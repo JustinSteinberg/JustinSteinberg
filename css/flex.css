@@ -485,7 +485,7 @@ div.preload-images {
 	
 	.work, .about, .community, .connect, .logo{
 		flex: 1 0 100% !important;
-		height: 18.4vh !important;
+		height: 18.4vh;
 		left: 0 !important;
 		top: 0 !important;
 		margin-left: 0 !important;

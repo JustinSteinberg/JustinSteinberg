@@ -15,10 +15,23 @@ $(window).resize(function(){
 		$(".logo").removeClass("hover3");
 		$(".community").removeClass("hover5");
 
+
+		//$(".logo").addEventListener('touchstart', function(e) {
+
+	   	//document.documentElement.style.overflow = 'hidden';
+	    //e.preventDefault();
+  	
+		//});
+
 	}
 	else {
 
 		console.log("Do Something!");
+		$(".connect").addClass("hover2");
+		$(".work").addClass("hover1");
+		$(".about").addClass("hover4");
+		$(".logo").addClass("hover3");
+		$(".community").addClass("hover5");
 
 		//* Connect
 		$(".hover2").hover(function(){

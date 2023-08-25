@@ -16,18 +16,35 @@ $(window).resize(function(){
 		$(".community").removeClass("hover5");
 
 
-		$(".logo").on({'touchstart' : function(e) {
+		$(".logo").on('touchstart touchend', function(e) {
 
 				$(".logo").toggleClass(".logo-hover");
 
-  			}
 		});
 
-		$(".logo").on({'touchend' : function(e) {
 
-				$(".logo").toggleClass(".logo-hover");
+		$(".connect").on('touchstart touchend', function(e) {
+			
+				$(".connect").toggleClass(".connect_hover");
 
-  			}
+		});
+
+		$(".about").on('touchstart touchend', function(e) {
+			
+				$(".about").toggleClass(".about_hover");
+
+		});
+
+		$(".work").on('touchstart touchend', function(e) {
+			
+				$(".work").toggleClass(".work_hover");
+
+		});
+
+		$(".community").on('touchstart touchend', function(e) {
+			
+				$(".community").toggleClass(".community_hover");
+
 		});
 
 	}

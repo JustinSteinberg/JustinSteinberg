@@ -23,6 +23,13 @@ $(window).resize(function(){
   			}
 		});
 
+		$(".logo").on({'touchend' : function(e) {
+
+				$(".logo").toggleClass(".logo-hover");
+
+  			}
+		});
+
 	}
 	else {
 

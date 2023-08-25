@@ -16,7 +16,7 @@ $(window).resize(function(){
 		$(".community").removeClass("hover5");
 	
 		$(".marquee").css("height", window.innerHeight * 0.08 + 'px');
-		$(".connect").css("height", window.innerHeighht * 0.184 + 'px');
+		$(".connect").css("height", window.innerHeight * 0.184 + 'px');
 		$(".work").css("height", window.innerHeight * 0.184 + 'px');
 		$(".about").css("height", window.innerHeight * 0.184 + 'px');
 		$(".logo").css("height", window.innerHeight * 0.184 + 'px');

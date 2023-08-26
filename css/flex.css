@@ -5,7 +5,7 @@
 }
 
 :root{
-	--svh: 1vh;
+	--vh: 1vh;
 }
 
 body{
@@ -484,12 +484,12 @@ div.preload-images {
 
 .marquee{
 		border-top: 4px solid black;
-		height: calc(8 * var(--svh));
+		height: calc(8 * var(--vh));
 	}
 	
 	.work, .about, .community, .connect, .logo{
 		flex: 1 0 100% !important;
-		height: calc(18.4 * var(--svh)) !important;
+		height: calc(18.4 * var(--vh)) !important;
 		left: 0 !important;
 		top: 0 !important;
 		margin-left: 0 !important;

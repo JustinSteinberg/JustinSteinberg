@@ -1,75 +1,63 @@
 
 $(window).ready(function(){
 	$(window).trigger('resize');
+
+	document.documentElement.style.setProperty('--vh', window.innerHeight*0.01 + 'px');
+
 });
 
 $(window).resize(function(){
 	
 	var targetWidth = 756;
-
+	
 	if ($(this).width() <= targetWidth){
 		console.log("Do Nothing!");
+
 		$(".connect").removeClass("hover2");
 		$(".work").removeClass("hover1");
 		$(".about").removeClass("hover4");
 		$(".logo").removeClass("hover3");
 		$(".community").removeClass("hover5");
 	
-		$(".marquee").css("height", window.innerHeight * 0.08 + 'px');
-		$(".connect").css("height", window.innerHeight * 0.184 + 'px');
-		$(".work").css("height", window.innerHeight * 0.184 + 'px');
-		$(".about").css("height", window.innerHeight * 0.184 + 'px');
-		$(".logo").css("height", window.innerHeight * 0.184 + 'px');
-		$(".community").css("height", window.innerHeight * 0.184 + 'px');
-
-		$(".logo").on('touchstart touchend', function(e) {
+		/*$(".logo").on('touchstart touchend', function(e) {
 
 				$(".logo").toggleClass(".logo-hover");
 
 		});
-
 
 		$(".connect").on('touchstart touchend', function(e) {
 			
 				$(".connect").toggleClass(".connect_hover");
 
 		});
-
 		$(".about").on('touchstart touchend', function(e) {
 			
 				$(".about").toggleClass(".about_hover");
 
 		});
-
 		$(".work").on('touchstart touchend', function(e) {
 			
 				$(".work").toggleClass(".work_hover");
 
 		});
-
 		$(".community").on('touchstart touchend', function(e) {
 			
 				$(".community").toggleClass(".community_hover");
 
 		});
-
+*/
 	}
 	else {
 
 		console.log("Do Something!");
+
 		$(".connect").addClass("hover2");
 		$(".work").addClass("hover1");
 		$(".about").addClass("hover4");
 		$(".logo").addClass("hover3");
 		$(".community").addClass("hover5");
 
-		$(".logo").css("height", "20vh");
-		$(".work").css("height", "40vh");
-		$(".connect").css("height", "60vh");
-		$(".community").css("height", "40vh");
-		$(".about").css("height", "60vh");
-
-		//* Connect
+			//* Connect
 		$(".hover2").hover(function(){
 			
 			var flexHover = "0.55 1 55%";
@@ -87,7 +75,8 @@ $(window).resize(function(){
 			$(".community").stop(true,true).css("height", "23vh");
 			$(".community").stop(true,true).css("top", "-20vh");
 			$(".community").stop(true,true).css("flex", "0.75 1 75%");
-					
+			$(".logo").stop(true,true).css("height", "20vh");
+
 
 		}, function(){
 

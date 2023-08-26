@@ -4,6 +4,10 @@
 	box-sizing: border-box;
 }
 
+:root{
+	--svh: 1vh;
+}
+
 body{
 	background-color: black;
 	overflow-y: hidden;
@@ -480,12 +484,12 @@ div.preload-images {
 
 .marquee{
 		border-top: 4px solid black;
-		height: 8vh;
+		height: calc(8 * var(--svh));
 	}
 	
 	.work, .about, .community, .connect, .logo{
 		flex: 1 0 100% !important;
-		height: 18.4vh;
+		height: calc(18.4 * var(--svh)) !important;
 		left: 0 !important;
 		top: 0 !important;
 		margin-left: 0 !important;
@@ -543,7 +547,6 @@ div.preload-images {
 	}
 
 	.work:hover, .work_hover{
-		background-size: 100% 100%;
 		cursor: pointer;
 		color: white;
 		font-size: 32px;
@@ -557,7 +560,6 @@ div.preload-images {
 	}
 
 	.connect:hover, .connect_hover, .about:hover, .about_hover, .community:hover, .community_hover{
-			background-size: 100% 100%;
 			cursor: pointer;
 			color: white;
 			font-size: 32px;
